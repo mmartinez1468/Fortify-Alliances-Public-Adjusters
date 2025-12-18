@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    ============================================================================
+    FORTIFY ALLIANCES - PUBLIC ADJUSTERS
+    ============================================================================
+    Professional insurance claim specialists fighting for maximum settlements
+    ============================================================================
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fortify Alliances - Public Adjusters | Maximum Insurance Settlements</title>
+    <meta name="description" content="Expert public adjusters fighting for your maximum insurance settlement. No upfront costs, just results. Free inspection and 24/7 emergency response.">
+</head>
+
+<body>
+
+    <!-- ========================================================================== -->
+    <!-- PRELOAD OVERLAY                                                            -->
+    <!-- Initial page load animation overlay                                        -->
+    <!-- ========================================================================== -->
+    <div class="preload-overlay">
+    </div>
+
+    <!-- ========================================================================== -->
+    <!-- NAVIGATION BAR                                                             -->
+    <!-- Fixed navigation with hamburger menu and CTA button                        -->
+    <!-- ========================================================================== -->
+    <nav>
+        <div class="nav-logo animate slide-down-scale delay-sm-300">
+            <a href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="nav-buttons animate delay-sm-300 slide-down-scale">
+            <button class="landing-button animate delay-sm-200 slide-down-scale" id="navContactButton">
+                <a href="#">Book a Discovery Call</a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+            </button>
+
+            <div class="nav-hamburger-button animate delay-sm-200 slide-down-scale" id="hamburger-btn">
+                <div class="nav-hamburger-icon" id="hamburger-icon">
+                    <span class="nav-hamburger-icon-bar"></span>
+                    <span class="nav-hamburger-icon-bar"></span>
+                    <span class="nav-hamburger-icon-bar"></span>
+                </div>
+                <p>Menu</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================================================== -->
+    <!-- NAVIGATION OVERLAY MENU                                                    -->
+    <!-- Hamburger menu overlay with navigation links and social media              -->
+    <!-- ========================================================================== -->
+    <div class="nav-overlay" id="nav-overlay">
+        <div class="nav-overlay-content">
+            <ul class="nav-overlay-menu">
+                <li><a href="#home">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Process</a></li>
+                <li><a href="#portfolio">Contact</a></li>
+            </ul>
+
+            <button class="landing-button" id="overlayButton">
+                <a href="#">Book a Discovery Call</a>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+            </button>
+
+           <div class="nav-overlay-right">
+                <div class="nav-overlay-image">
+                    <img src="images/services-1.jpg" alt="">
+                </div>
+
+                <div class="nav-overlay-media-links">
+                    <!-- Facebook -->
+                    <div class="nav-overlay-media-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="nav-overlay-media-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="nav-overlay-media-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="nav-overlay-media-link">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.06364 7.50914C4.70909 4.24092 8.09084 2 12 2C14.6954 2 16.959 2.99095 18.6909 4.60455L15.8227 7.47274C14.7864 6.48185 13.4681 5.97727 12 5.97727C9.39542 5.97727 7.19084 7.73637 6.40455 10.1C6.2045 10.7 6.09086 11.3409 6.09086 12C6.09086 12.6591 6.2045 13.3 6.40455 13.9C7.19084 16.2636 9.39542 18.0227 12 18.0227C13.3454 18.0227 14.4909 17.6682 15.3864 17.0682C16.4454 16.3591 17.15 15.3 17.3818 14.05H12V10.1818H21.4181C21.5364 10.8363 21.6 11.5182 21.6 12.2273C21.6 15.2727 20.5091 17.8363 18.6181 19.5773C16.9636 21.1046 14.7 22 12 22C8.09084 22 4.70909 19.7591 3.06364 16.4909C2.38638 15.1409 2 13.6136 2 12C2 10.3864 2.38638 8.85911 3.06364 7.50914Z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+    
+    <!-- ========================================================================== -->
+    <!-- HERO LANDING SECTION                                                       -->
+    <!-- Full-height hero with animated headline and scroll indicators              -->
+    <!-- ========================================================================== -->
+    <section id="heroLanding">
+        <div class="hero-overlay animate zoom-in">
+            <div class="hero-overlay-header">
+                <h1>
+                    <div class="hero-overlay-header-container">
+                        <span class="animate slide-up-fast delay-sm-300">Maximizing</span>
+                    </div>
+                    <div class="hero-overlay-header-container">
+                        <span class="animate slide-up-fast delay-sm-400">Claims.</span>
+                    </div>
+                    <div class="hero-overlay-header-container">
+                        <span class="animate slide-up-fast delay-sm-500">Minimizing</span>
+                    </div>
+                    <div class="hero-overlay-header-container">
+                        <span class="animate slide-up-fast delay-sm-600">Your</span>
+                    </div>
+                    <div class="hero-overlay-header-container">
+                        <span class="animate slide-up-fast delay-sm-600">Stress.</span>
+                    </div>
+                </h1>
+            </div>
+        </div>
+
+        <div class="hero-info-desktop">
+            <div class="hero-info-desktop-scroll animate slide-left delay-sm-600">
+                <p>Scroll Down</p>
+            </div>
+
+            <div class="hero-info-desktop-location animate slide-right delay-sm-600">
+                <p>Chicago, Illinois</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="vsect-wrapper">
+        <section class="vsect-block vsect-blue">
+            <div class="cta-header">
+                <div class="cta-header__tag">
+                    <span class="slide-up animate">Why Choose Us</span>
+                </div>
+                <div class="cta-header__title">
+                    <h2><span class="slide-down animate highlight">Expert</span> <span class="slide-down animate">public</span> <span class="slide-down animate">adjusters</span> <span class="slide-up animate highlight">fighting</span> <span class="slide-up animate highlight">for</span> <span class="slide-up animate highlight">your</span> <span class="slide-up animate highlight">maximum</span> <span class="slide-up animate">insurance</span> <span class="slide-up animate">settlement</span> <span class="slide-up animate">—</span> <span class="slide-up animate highlight">no</span> <span class="slide-up animate highlight">upfront</span> <span class="slide-up animate highlight">costs,</span> <span class="slide-up animate">just</span> <span class="slide-up animate">results</span></h2>
+                </div>
+            </div>
+
+            <div class="contact-divider"></div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================================================================== -->
+    <!-- SERVICES SECTION                                                           -->
+    <!-- Interactive service tabs showcasing damage types and solutions             -->
+    <!-- ========================================================================== -->
+    <section id="services" class="line-animate-repeat line-color-accent line-top line-thick">
+        <div class="services-intro">
+            <div class="services-intro__title">
+                <h2 class="slide-up animate">
+                    <span>We</span> <span>help</span> <span>protect</span> <span>what</span> <span>matters</span> <span>most</span>
+                </h2>
+            </div>
+            <div class="services-intro__tabs">
+                <span class="services-intro__tab">No Upfront Cost</span>
+                <span class="services-intro__tab">Licensed Professionals</span>
+                <span class="services-intro__tab">24/7 Emergency Response</span>
+                <span class="services-intro__tab">Maximum Settlement</span>
+                <span class="services-intro__tab">Free Inspection</span>
+                <span class="services-intro__tab">Expert Negotiation</span>
+            </div>
+        </div>
+
+        <div class="services-tabs-wrapper">
+            <!-- STORM/WIND DAMAGE -->
+            <div class="services-tab-container">
+                <div class="services-tab active" data-tab="storm">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.9885 18L18.2044 16.4194C18.4061 16.1572 18.5154 15.8356 18.5154 15.5048C18.5154 14.6764 17.8439 14.0048 17.0154 14.0048H15V10.0291C15 9.56319 14.7835 9.12374 14.4141 8.83982C13.7573 8.33495 12.8156 8.45813 12.3107 9.11494L5.9453 17.3961C3.04248 16.1959 1 13.3365 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.5376 20.5376 18 17.5 18H16.9885ZM13 16.0048H16L11 22.5048V18.0048H8L13 11.5V16.0048Z"></path>
+                    </svg>
+                    <h2>Storm/Wind Damage</h2>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+                    </svg>
+                </div>
+                <div class="services-tab-content active" data-content="storm">
+                    <div class="services-tab-content-info">
+                        <div class="services-tab-content-intro">
+                            <div class="services-tab-content-intro__title">
+                                <h2 class="animate-repeat slide-up">Storm/Wind Damage</h2>
+                            </div>
+                            <div class="services-tab-content-intro__description">
+                                <p class="animate-repeat slide-up">
+                                    Strong winds can cause hidden but costly damage. 
+                                    We provide a full inspection to ensure nothing gets missed FOR FREE.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-tab-content-checklist">
+                            <div class="services-tab-content-check animate-repeat slide-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Emergency Response</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Full Documentation</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Maximum Settlement</p>
+                            </div>
+                        </div>
+
+                        <button class="landing-button animate-repeat slide-up">
+                            <a href="#">Book a Call</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="services-tab-image animate-repeat slide-right">
+                        <img src="images/services-storm.jpg" alt="" class="animate-repeat fill-right">
+                    </div>
+                </div>
+            </div>
+
+            <!-- HAIL DAMAGE -->
+            <div class="services-tab-container">
+                <div class="services-tab" data-tab="hail">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9948 17.7944C18.8878 15.6808 17.1402 14 15 14C14.622 14 14.2562 14.0524 13.9096 14.1504C13.5201 12.3494 11.9176 11 10 11C7.79086 11 6 12.7909 6 15C6 16.0794 6.42752 17.0589 7.12246 17.7784C3.61004 16.9337 1 13.7716 1 10C1 5.58172 4.58172 2 9 2C12.3949 2 15.2959 4.11466 16.4576 7.09864C16.7951 7.0339 17.1436 7 17.5 7C20.5376 7 23 9.46243 23 12.5C23 15.0194 21.306 17.1432 18.9948 17.7944ZM10 17C8.89543 17 8 16.1046 8 15C8 13.8954 8.89543 13 10 13C11.1046 13 12 13.8954 12 15C12 16.1046 11.1046 17 10 17ZM15 20C13.8954 20 13 19.1046 13 18C13 16.8954 13.8954 16 15 16C16.1046 16 17 16.8954 17 18C17 19.1046 16.1046 20 15 20ZM10 23C8.89543 23 8 22.1046 8 21C8 19.8954 8.89543 19 10 19C11.1046 19 12 19.8954 12 21C12 22.1046 11.1046 23 10 23Z"></path></svg>
+                    <h2>Large Hail Damage</h2>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+                    </svg>
+                </div>
+                <div class="services-tab-content" data-content="hail">
+                    <div class="services-tab-content-info">
+                        <div class="services-tab-content-intro">
+                            <div class="services-tab-content-intro__title">
+                                <h2 class="animate-repeat slide-up">Large Hail Damage</h2>
+                            </div>
+                            <div class="services-tab-content-intro__description">
+                                <p class="animate-repeat slide-up">
+                                    Hail can cause significant damage to your roof and property.
+                                    We provide comprehensive assessments to document all damage.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-tab-content-checklist">
+                            <div class="services-tab-content-check animate-repeat slide-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Professional Inspection</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Insurance Claim Support</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Expert Repairs</p>
+                            </div>
+                        </div>
+
+                        <button class="landing-button animate-repeat slide-up">
+                            <a href="#">Book a Call</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="services-tab-image animate-repeat fill-right">
+                        <img src="images/services-hail.jpg" alt="" class="animate-repeat fill-right">
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIRE/SMOKE DAMAGE -->
+            <div class="services-tab-container">
+                <div class="services-tab" data-tab="fire">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 23C7.85786 23 4.5 19.6421 4.5 15.5C4.5 13.3462 5.40786 11.4045 6.86179 10.0366C8.20403 8.77375 11.5 6.49951 11 1.5C17 5.5 20 9.5 14 15.5C15 15.5 16.5 15.5 19 13.0296C19.2697 13.8032 19.5 14.6345 19.5 15.5C19.5 19.6421 16.1421 23 12 23Z"></path></svg>
+                    <h2>Fire/Smoke Damage</h2>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+                    </svg>
+                </div>
+                <div class="services-tab-content" data-content="fire">
+                    <div class="services-tab-content-info">
+                        <div class="services-tab-content-intro">
+                            <div class="services-tab-content-intro__title">
+                                <h2 class="animate-repeat slide-up">Fire/Smoke Damage</h2>
+                            </div>
+                            <div class="services-tab-content-intro__description">
+                                <p class="animate-repeat slide-up">
+                                    Fire and smoke damage requires immediate attention.
+                                    Our team responds quickly to assess and restore your property.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-tab-content-checklist">
+                            <div class="services-tab-content-check animate-repeat slide-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>24/7 Emergency Service</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Smoke Odor Removal</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Complete Restoration</p>
+                            </div>
+                        </div>
+
+                        <button class="landing-button animate-repeat slide-up">
+                            <a href="#">Book a Call</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+                        </button>
+                    </div>
+
+                    <div class="services-tab-image animate-repeat fill-right">
+                        <img src="images/services-fire.jpg" alt="" class="animate-repeat fill-right">
+                    </div>
+                </div>
+            </div>
+
+            <!-- WATER/FLOOD DAMAGE -->
+            <div class="services-tab-container">
+                <div class="services-tab" data-tab="water">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0001 17.4723C17.0616 18.4223 18.4634 19 20 19H22V21H20C18.5428 21 17.1766 20.6104 15.9998 19.9296C14.8242 20.6101 13.4576 21 12 21C10.5428 21 9.17657 20.6104 7.99984 19.9296C6.8242 20.6101 5.45763 21 4 21H2V19H4C5.53713 19 6.93925 18.422 8.00013 17.4723C9.06163 18.4223 10.4634 19 12 19C13.5371 19 14.9393 18.422 16.0001 17.4723ZM12.5734 1.53204L12.6727 1.6115L23 11H20V17C18.3643 17 16.912 16.2145 15.9998 15.0002C15.088 16.2145 13.6357 17 12 17C10.3643 17 8.91199 16.2145 7.99978 15.0002C7.08801 16.2145 5.63573 17 4 17L3.999 10.9994L1 11L11.3273 1.6115C11.6452 1.32254 12.1027 1.27439 12.4671 1.46702L12.5734 1.53204Z"></path></svg>
+                    <h2>Water/Flood Damage</h2>
+                    <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path>
+                    </svg>
+                </div>
+                <div class="services-tab-content" data-content="water">
+                    <div class="services-tab-content-info">
+                        <div class="services-tab-content-intro">
+                            <div class="services-tab-content-intro__title">
+                                <h2 class="animate-repeat slide-up">Water/Flood Damage</h2>
+                            </div>
+                            <div class="services-tab-content-intro__description">
+                                <p class="animate-repeat slide-up">
+                                    Water damage can lead to serious structural issues and mold.
+                                    We provide rapid response and thorough remediation.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="services-tab-content-checklist">
+                            <div class="services-tab-content-check animate-repeat slide-left">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Water Extraction</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Structural Drying</p>
+                            </div>
+
+                            <div class="services-tab-content-check animate-repeat slide-left animate-delay-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>
+                                <p>Mold Prevention</p>
+                            </div>
+                        </div>
+
+                        <button class="landing-button animate-repeat slide-up">
+                            <a href="#">Book a Call</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+                        </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+                    <div class="services-tab-image animate-repeat fill-right">
+                        <img src="images/services-floof.webp" alt="" class="animate-repeat fill-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop content area (hidden on mobile) -->
+        <div class="services-content-desktop animate slide-up-scale"></div>
+    </section>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+    <!-- ========================================================================== -->
+    <!-- PROCESS SECTION                                                            -->
+    <!-- Step-by-step breakdown of the claims process with detailed outcomes        -->
+    <!-- ========================================================================== -->
+    <section id="ourProcess">
+        <div class="process-header" aria-label="Process header">
+            <div class="process-intro__title">
+                <h2 class="slide-up animate">
+                    <span>Our</span> <span>proven</span> <span>process</span> <span>for</span> <span>maximum</span> <span>results</span>
+                </h2>
+            </div>
+            <div class="process-intro__tabs">
+                <span class="process-intro__tab">Step-by-Step Guidance</span>
+                <span class="process-intro__tab">Transparent Communication</span>
+                <span class="process-intro__tab">Expert Representation</span>
+                <span class="process-intro__tab">Full Documentation</span>
+                <span class="process-intro__tab">Settlement Maximization</span>
+                <span class="process-intro__tab">Complete Support</span>
+            </div>
+        </div>
+
+        <div class="process-step-wrapper">
+            <!-- Step 01: Inspection & Documentation -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/Rectangle 77.png"
+                        alt="Inspection and Documentation process"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-right">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent line-reverse">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">01</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Inspection</span> <span class="animate slide-up animate-delay-100">&</span> <span class="animate slide-up animate-delay-200">Documentation</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Comprehensive Property Damage Assessment</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">We thoroughly inspect and record all damages using photos, reports, and expert assessments. Our team meticulously documents every detail to ensure nothing is overlooked in your claim.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>A complete and accurate record of all damages that strengthens your claim and maximizes your settlement.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Step 02: Claim Strategy & Filing -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/step-2.jpg"
+                        alt="Claim Strategy and Filing process"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-left">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">02</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Claim</span> <span class="animate slide-up animate-delay-100">Strategy</span> <span class="animate slide-up animate-delay-100">&</span> <span class="animate slide-up animate-delay-200">Filing</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Professional Claim Preparation & Submission</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">We build your claim with precise documentation and submit it directly to your insurance carrier. Our experts ensure every detail is properly formatted and presented for maximum impact.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>A professionally prepared claim that positions you for the best possible settlement from your insurer.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Step 03: Negotiation & Representation -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/step-3.webp"
+                        alt="Negotiation and Representation process"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-right">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent line-reverse">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">03</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Negotiation</span> <span class="animate slide-up animate-delay-100">&</span> <span class="animate slide-up animate-delay-200">Representation</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Expert Advocacy For Your Best Interest</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">We handle all communication, push back against low offers, and negotiate for a fair settlement. Our experienced adjusters fight to ensure you receive what you're entitled to.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>Strong representation that secures a settlement reflecting the true value of your damages and losses.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Step 04: Settlement & Recovery -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/step-4.jpg"
+                        alt="Settlement and Recovery process"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-left">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">04</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Settlement</span> <span class="animate slide-up animate-delay-100">&</span> <span class="animate slide-up animate-delay-200">Recovery</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Guided Payment Process & Property Restoration</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">Once settled, we walk you through every step of the payment process until your property is restored. We ensure you understand each phase and help coordinate the recovery efforts.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>A smooth transition from settlement to restoration with clear guidance throughout the entire recovery journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Step 05: Restoration Support -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/portfolio-8.jpg"
+                        alt="Restoration Support process"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-right">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent line-reverse">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">05</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Restoration</span> <span class="animate slide-up animate-delay-100">Support</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Rebuilding Your Home With Expert Guidance</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">After securing your settlement, we help you rebuild your home—stronger, better, and ready for a fresh start. We connect you with trusted contractors and oversee the restoration process.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>A fully restored property that exceeds its pre-damage condition and provides lasting value for years ahead.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Step 06: Peace of Mind -->
+            <article class="process-step">
+                <div class="process-step-image">
+                    <img
+                        src="images/step-6.jpg"
+                        alt="Peace of Mind assurance"
+                        loading="lazy"
+                        decoding="async"
+                        class="animate wipe-left">
+                </div>
+                <div class="process-step-content line-animate line-top line-color-accent">
+                    <div class="step-content__tag">
+                        <h2 class="animate slide-up">06</h2>
+                    </div>
+                    <div class="step-content-wrapper">
+                        <div class="step-content__info">
+                            <div class="step-content__info-title">
+                                <h3><span class="animate slide-up">Peace</span> <span class="animate slide-up animate-delay-100">of</span> <span class="animate slide-up animate-delay-200">Mind</span></h3>
+                            </div>
+                            <div class="step-content__info-subtitle">
+                                <span class="animate slide-up">Complete Confidence In Your Recovery</span>
+                            </div>
+                            <div class="step-content__info-description">
+                                <p class="slide-left animate animate-delay-300">We thoroughly inspect and record all damages using photos, reports, and expert assessments. From start to finish, we ensure your claim was handled properly and your property is restored to its best condition.</p>
+                            </div>
+                        </div>
+                        <div class="step-content-outcome slide-up animate animate-delay-400">
+                            <span>outcome</span>
+                            <p>Total assurance that your claim was maximized and your property is protected for the future.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================================================================== -->
+    <!-- CONTACT SECTION                                                            -->
+    <!-- Contact form and consultant information for discovery calls                -->
+    <!-- ========================================================================== -->
+        <section id="contactUs">
+            <div class="contact-us-wrapper">
+                <!-- CONTACT INTRO -->
+                <div class="contact-intro">
+                    <span>Contact Us</span>
+                    <h2>
+                        Get A Free Consultation
+                    </h2>
+
+                    <div class="contact-headshot">
+                        <img src="images/faceshot.png" alt="">
+                    </div>
+
+                    <div class="contact-intro-info">
+                        <div class="contact-intro-info-about">
+                            <h4>Bryan Villa</h4>
+                            <p>CEO & Founder</p>
+                            <span>License #: 21311043</span>
+                        </div>
+
+                        <div class="contact-intro-info-links">
+                            <a href="">+1 (312)-687-2604</a>
+                            <a href="">Book A Call Today</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CONTACT FORM -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="fd9bf7fb-8346-4231-a25e-124325ab28f2">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <label for="budget" class="form-label">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                class="form-input" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-row">
+                            <label for="budget" class="form-label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="businessEmail" 
+                                name="businessEmail" 
+                                class="form-input" 
+                                placeholder="your.email@company.com"
+                                required
+                            >
+                        </div>
+
+                        <!-- Budget Dropdown -->
+                        <div class="form-row">
+                            <label for="budget" class="form-label">Project Budget *</label>
+                            <select id="budget" name="budget" class="form-select" required>
+                                <option value="">Select your budget range</option>
+                                <option value="under-5k">Under $1,000</option>
+                                <option value="5k-10k">$2,000 - $3,000</option>
+                                <option value="10k-25k">$4,000 - $5,000</option>
+                                <option value="25k-50k">$7,000 - $10,000</option>
+                                <option value="50k-plus">$25,000+</option>
+                            </select>
+                        </div>
+
+                        <!-- Services Checkboxes -->
+                        <div class="form-row">
+                            <label class="form-label">Services Needed (Select all that apply)</label>
+                            
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="webDesign" name="services[]" value="web-design" class="checkbox-input">
+                                <label for="webDesign" class="checkbox-label">Web Design & Development</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="branding" name="services[]" value="branding" class="checkbox-input">
+                                <label for="branding" class="checkbox-label">Brand Identity & Logo Design</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="ecommerce" name="services[]" value="ecommerce" class="checkbox-input">
+                                <label for="ecommerce" class="checkbox-label">E-commerce Solutions</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="marketing" name="services[]" value="marketing" class="checkbox-input">
+                                <label for="marketing" class="checkbox-label">Digital Marketing & SEO</label>
+                            </div>
+
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="maintenance" name="services[]" value="maintenance" class="checkbox-input">
+                                <label for="maintenance" class="checkbox-label">Website Maintenance & Support</label>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-row">
+                            <label for="budget" class="form-label">Project Details</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                placeholder="Tell us about your project, goals, and any specific requirements..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="landing-button animate delay-sm-200 slide-down-scale" id="navContactButton">
+                            <a href="#">Book a Discovery Call</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z"></path></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================================================================== -->
+    <!-- FOOTER SECTION                                                             -->
+    <!-- Site footer with contact info, links, and social media                     -->
+    <!-- ========================================================================== -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"></path></svg>
+                            <div class="cta-text">
+                                <h4>Find Me</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"></path></svg>
+                            <div class="cta-text">
+                                <h4>Call Us</h4>
+                                <span>+1 (312)-687-2604</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z"></path></svg>
+                            <div class="cta-text">
+                                <h4>Email Us</h4>
+                                <span>Fortifyalliances@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row line-animate line-top line-color-accent">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Trusted advocates for your insurance claims. We fight for fair settlements so you can focus on recovery. Licensed, experienced, and committed to maximizing your claim value. Available 24/7 for consultation.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <div class="footer-social-icon-wrapper">
+                                    <a href="https://www.instagram.com/marquitoss1892/" aria-label="Instagram Link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg></a>
+                                <a href="#" aria-label="Facebook Link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M15.4024 21V14.0344H17.7347L18.0838 11.3265H15.4024V9.59765C15.4024 8.81364 15.62 8.27934 16.7443 8.27934L18.1783 8.27867V5.85676C17.9302 5.82382 17.0791 5.75006 16.0888 5.75006C14.0213 5.75006 12.606 7.01198 12.606 9.32952V11.3265H10.2677V14.0344H12.606V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15.4024Z"></path></svg></a>
+                                <a href="#" aria-label="X Link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z"></path></svg></a>
+                                <a href="https://www.linkedin.com/in/marcos-martinez-928b86301/" aria-label="LinkedIn Link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#aboutMe">services</a></li>
+                                <li><a href="#myPortfolio">portfolio</a></li>
+                                <li><a href="#contactMe">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don't miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(255,255,255,1)"><path d="M1.94607 9.31543C1.42353 9.14125 1.4194 8.86022 1.95682 8.68108L21.043 2.31901C21.5715 2.14285 21.8746 2.43866 21.7265 2.95694L16.2733 22.0432C16.1223 22.5716 15.8177 22.59 15.5944 22.0876L11.9999 14L17.9999 6.00005L9.99992 12L1.94607 9.31543Z"></path></svg></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2025, All Right Reserved <a href="https://codepen.io/anupkumar92/">BDA Public Adjusters</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- ========================================================================== -->
+    <!-- SCRIPTS                                                                    -->
+    <!-- Main functionality and animation system                                    -->
+    <!-- ========================================================================== -->
+    <script src="script.js" defer></script>
+    <script src="animations.js"></script>
+
+</body>
+</html>
+<!-- End of Document -->
