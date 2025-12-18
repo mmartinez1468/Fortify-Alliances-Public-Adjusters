@@ -2602,6 +2602,16 @@ body.menu-open {
     line-height: normal;
 }
 
+
+
+
+@media screen and (max-width: 391px) {
+    .process-intro__title h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
 /* Tablet Styles (768px+) */
 @media screen and (min-width: 768px) {
     .process-header {
