@@ -184,6 +184,52 @@ span {
     display: inline-block;
 }
 
+/* Accessibility - Visually Hidden */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Accessibility - Touch Targets */
+/* Ensure all interactive elements have minimum 44x44px touch targets */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="radio"],
+.nav-hamburger-button,
+.nav-overlay-menu a,
+.footer-social-icon a,
+.services-tab {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Maintain proper spacing for touch targets */
+.nav-overlay-menu li {
+    margin: 0.5rem 0;
+}
+
+.footer-social-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.checkbox-item {
+    padding: 0.5rem 0;
+}
+
+
+
 /* Links */
 a {
     font: var(--links);
@@ -1524,6 +1570,7 @@ th, td {
 .landing-button {
     display: flex;
     align-items: center;
+    gap: 1rem;
     width: 60%;
     background: var(--colorbackground);
     border-radius: 5px;
@@ -1911,7 +1958,6 @@ body.menu-open {
 }
 
 #navContactButton {
-    width: 254px;
     margin-left: auto;
     margin-right: 0;
     display: none;
@@ -3363,6 +3409,7 @@ body.menu-open {
 
 
 
+
 @media screen and (min-width: 768px) {
     #contactUs {
         padding: 6.25rem 2.25rem;
@@ -3443,7 +3490,6 @@ body.menu-open {
 ========================================================================== */
 .footer-section {
           background: var(--colorsecondary);
-          position: relative;
         }
         .footer-container {
           padding: 1rem;
